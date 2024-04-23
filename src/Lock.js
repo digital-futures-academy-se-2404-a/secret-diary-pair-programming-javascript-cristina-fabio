@@ -1,5 +1,11 @@
 export default class Lock {
-  #pin = 1234;
+	#pin = 1234;
+	#isLocked = false;
 
-  unlock = (pin) => pin === this.#pin;
+	unlock = (pin) => pin === this.#pin;
+
+	lock = () => {
+		this.#isLocked = true;
+	};
+	checkLock = () => this.#isLocked;
 }
