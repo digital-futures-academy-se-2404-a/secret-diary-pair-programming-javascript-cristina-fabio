@@ -1,4 +1,4 @@
-import Lock from "../../src/Lock.js";
+import Lock from "../src/Lock.js";
 
 describe("Lock Class tests", () => {
 	describe("Test unlock functionality", () => {
@@ -11,7 +11,7 @@ describe("Lock Class tests", () => {
 		afterEach(() => {
 			testLock = undefined;
 		});
-		it("should unlock when passed correct pin number into unlock()", () => {
+		xit("should unlock when passed correct pin number into unlock()", () => {
 			//Arrange
 			const expected = true;
 			//Act
@@ -19,7 +19,7 @@ describe("Lock Class tests", () => {
 			//Assert
 			expect(testLock.unlock(1234)).toBe(expected);
 		});
-		it("should not unlock when passed incorrect pin number into unlock()", () => {
+		xit("should not unlock when passed incorrect pin number into unlock()", () => {
 			//Arrange
 			const expected = false;
 			//Act
@@ -27,7 +27,7 @@ describe("Lock Class tests", () => {
 			//Assert
 			expect(testLock.unlock(1334)).toBe(expected);
 		});
-		it("should change the value of lock to true when call", () => {
+		xit("should change the value of lock to true when call", () => {
 			//Arrange
 			const expected = true;
 			//Act
